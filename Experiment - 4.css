@@ -1,0 +1,16 @@
+.nav {
+  list-style-type: none;
+  background-color: #098cc4;
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 1rem;
+  font-weight: 600;
+  font-size: large
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+.nav a:hover {
+  text-decoration: underline;
+}

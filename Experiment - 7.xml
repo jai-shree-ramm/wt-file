@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <name>Sahil Aggarwal</name>
+        <email>sahil@gmail.com</email>
+        <mobile>9999999999</mobile>
+        <enrollno>02615002721</enrollno>
+    </student>
+    <student>
+        <name>Yuvraj Gupta</name>
+        <email>yuvraj@gmail.com</email>
+        <mobile>8888888888</mobile>
+        <enrollno>02815002721</enrollno>
+    </student>
+    <student>
+        <name>Vipul Goel</name>
+        <email>vipul@gmail.com</email>
+        <mobile>7777777777</mobile>
+        <enrollno>03215002721</enrollno>
+    </student>
+</students>

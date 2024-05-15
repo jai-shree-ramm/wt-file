@@ -1,0 +1,3 @@
+John:password123:john@example.com
+Jane:jane456:jane@example.com
+Alice:qwerty:alice@example.com

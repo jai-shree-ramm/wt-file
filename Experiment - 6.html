@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Experiment - 6</title>
+  </head>
+  <body>
+    <form style="display: flex; flex-direction: column; gap: 1rem">
+      <div>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" />
+      </div>
+      <div>
+        <label for="mobile">Mobile: </label>
+        <input type="number" id="mobile" name="mobile" placeholder="Enter your mobile" />
+      </div>
+      <div>
+        <label for="gender">Gender: </label>
+        <input type="radio" id="male" name="gender" value="Male" />Male <input type="radio" id="female" name="gender" value="Female" />Female
+      </div>
+      <div>
+        <label for="color">Favourite colour: </label>
+        <input type="text" id="color" name="color" />
+      </div>
+      <button type="submit" style="width: fit-content">Submit</button>
+    </form>
+    <textarea id="textarea" style="display: none; width: 200px; margin-top: 1rem" rows="10"></textarea>
+
+    <script>
+      const form = document.forms[0];
+      form.addEventListener("submit", submit);
+      function submit(e) {
+        e.preventDefault();
+        const name = form.name.value;
+        const email = form.email.value;
+        const mobile = form.mobile.value;
+        const gender = form.gender.value;
+        const color = form.color.value;
+        if (!name) return alert("Please enter your name");
+        if (!email) return alert("Please enter your email");
+        if (mobile.length !== 10) return alert("Mobile number must be of 10 digits");
+        if (!gender) return alert("Please select your gender");
+        const textarea = document.getElementById("textarea");
+        textarea.style.display = "block";
+        textarea.style.color = color;
+        textarea.value = `Hello, I am ${name}! My gender is ${gender} and my favourite colour is ${color}. You can contact me at ${email} and ${mobile}.`;
+      }
+    </script>
+  </body>
+</html>
